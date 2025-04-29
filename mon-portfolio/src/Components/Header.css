@@ -1,0 +1,23 @@
+.header h1 {
+    color:antiquewhite;
+}
+
+.header {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* margin: auto;
+    justify-content: flex-start; */
+    /* align-content: space-around; */
+}
+
+.routes {
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    /* padding: 10px; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    position:absolute;
+    right: 5%;
+    /* width: 350px; */
+}

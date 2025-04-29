@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header'
 
 function App() {
   return (
     <div>
-    <h1>Mon Portfolio</h1>
-    <p>Bienvenue sur mon site de portfolio!!</p>
+    <Header/>
     </div>
   );
 }
