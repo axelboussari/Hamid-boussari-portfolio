@@ -4,7 +4,7 @@ import "./Header.css"
 export default function Header () {
   return (<div className="header">
         <div>
-        <h1>Hamid's Portfolio</h1>
+        <h1 className="title">Hamid's Portfolio</h1>
         </div>
         <div className="routes">
         <div>
