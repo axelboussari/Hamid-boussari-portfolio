@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+.home{
+    padding-top: 200px;
+    padding-left: 90px;
+    color: white;
+    font-size: large;
+    font-family: Orbitron;
+    writing-mode: horizontal-tb;
+}
+
+.typing {
+    color: blue;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 22%;
+    }
+  }
+  
+.pres {
+    display: flex;
+
+}
+img {
+    
+}
+
+@keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+
+.typing {
+    display:inline-flex;
+    overflow: hidden;
+    padding-left: 10px;
+    white-space: nowrap;
+    border-right: 0.15em solid white;
+    animation: typing 5s steps(35, end) infinite, blink-caret 0.75s step-end infinite;
+    width: 0;
+}
