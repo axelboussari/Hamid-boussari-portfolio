@@ -8,9 +8,26 @@
     writing-mode: horizontal-tb;
 }
 
+.presentation {
+  display: flex;
+}
+
+img {
+position: absolute;
+right: 50px;
+top: 30%;
+padding-right: 100px;
+width: 400px;
+border-radius: 100px;
+
+  
+  /* padding-left: 200px; */
+}
+
 .typing {
     color: blue;
 }
+
 
 @keyframes typing {
     from {
@@ -20,14 +37,7 @@
       width: 22%;
     }
   }
-  
-.pres {
-    display: flex;
 
-}
-img {
-    
-}
 
 @keyframes blink-caret {
     from, to {
