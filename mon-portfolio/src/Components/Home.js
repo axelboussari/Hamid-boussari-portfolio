@@ -13,7 +13,7 @@ export default function Home () {
         <div>
             <h2 className='pres'>
                 I am a <span class="typing"> Software engineer.</span>
-                {/* <p class="">Je suis passionné d'informatique et je recherche un stage pour approfondir et découvrir encore plus le domaine de l'informatique.</p> */}
+               
             </h2>
         </div>
             <img src={photo}/>
