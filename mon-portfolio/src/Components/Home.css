@@ -22,8 +22,18 @@ border-radius: 50%;
 }
 
 
-.typing, .my_name {
+.typing {
     color: blue;
+}
+
+.Salutation {
+  position: absolute;
+  top: 35%;
+}
+
+.Name {
+  position: absolute;
+  top: 40%;
 }
 
 
@@ -34,7 +44,7 @@ border-radius: 50%;
     to {
       width: 22%;
     }
-  }
+}
 
 
 @keyframes blink-caret {

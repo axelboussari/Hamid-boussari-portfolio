@@ -1,34 +1,28 @@
 import React from "react";
 import "./Header.css"
 
-export default function Header () {
-  return (<div className="header">
-        <div>
-        <h1 className="title">Hamid's Portfolio</h1>
-        </div>
-        <div className="routes">
-        <div>
-        <h1>Home</h1>
-        </div>
-        <h1>About</h1>
-        <div>
-        </div>
-        <div>
-        <h1>Education</h1>
-        </div>
-        <div>
-        <h1>Skills</h1>
-        </div>
-        <div>
-        <h1>Projects</h1>
-        </div>
-        <div>
-        <h1>Resume</h1>
-        </div>
-        <div>
-        <h1>Contact</h1>
-        </div>
-        </div>
-    </div>
-    )
+
+export default function Header() {
+  return (
+    <nav class="navbar"style={{ backgroundColor: 'grey' }} data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          Hamid's Portfolio
+        </a>
+        <ul class="nav justify-content-end">
+        <ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link Home" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link Education" href="#">Education</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link Skills" href="#">Skills</a>
+  </li>
+</ul>
+</ul>
+      </div>
+    </nav>
+  );
 }

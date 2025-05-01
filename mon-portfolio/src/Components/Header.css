@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 
 
 .header {
@@ -20,6 +20,10 @@
 .routes {
     display: flex;
     /* margin: auto; */
-    gap: 20px;
+    /* gap: 20px;
     flex-wrap: wrap;
+} */ 
+ 
+.navbar bg-dark border-bottom border-body {
+    background-color: blue;
 }
