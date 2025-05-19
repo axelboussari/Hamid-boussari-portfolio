@@ -6,7 +6,7 @@ import './Home.css'
 
 export default function Home () {
     return (<div className="home">
-        <div>
+        {/* <div>
             <h1 class="Salutation">Hello, I am</h1>
             <h1 class="Name">Olawolé BOUSSARI</h1>
         </div>
@@ -16,7 +16,7 @@ export default function Home () {
                
             </h2>
         </div>
-            <img src={photo}/>
+            <img src={photo}/> */}
       </div>
     )
   }
