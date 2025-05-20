@@ -4,7 +4,7 @@ import "./Header.css"
 
 export default function Header() {
   return (
-   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style={{ backgroundColor: '#e9e8e6', fontFamily: 'Orbitron' }}>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary" style={{ backgroundColor: '#e9e8e6', fontFamily: 'Orbitron' }}>
   <div class="container-fluid">
     <a class="navbar-brand me-auto" href="#">OLAWOLE BOUSSARI</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -33,9 +33,7 @@ export default function Header() {
             <a class="nav-link mx-lg-2" href="#">CONTACTS</a>
           </li>
         </ul>
-      </div>
-    </div>
-<div className="d-flex align-items-center gap-3">
+        <div className="d-flex align-items-center gap-3">
   <a href="https://www.linkedin.com/in/hamid-boussari-722873241/" target="_blank" rel="noreferrer">
     <i className="bi bi-linkedin"></i>
   </a>
@@ -45,9 +43,10 @@ export default function Header() {
   <a href="mailto:axel.boussari@gmail.com" target="_blank" rel="noreferrer">
     <i className="bi bi-envelope-paper-fill"></i>
   </a>
+   </div>
+      </div>
 </div>
   </div>
 </nav>
-    
   );
 }
