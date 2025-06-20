@@ -59,6 +59,7 @@ gsap.from(split.chars, {
       <div class="mon-element justify-items-center">
         <h1 style={{fontFamily: 'orbitron', fontSize: '80px'}}>EDUCATION</h1>
         </div>
+        <div class="university border border-5"></div>
           <div className="flex justify-center items-center h-screen bg-gray-100" style={{ backgroundColor: ' black', fontFamily: 'Orbitron' }}>
             {/* <div class="custom-cursor">&lt;/&gt;</div> */}
             <img
