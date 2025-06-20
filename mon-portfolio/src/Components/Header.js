@@ -4,7 +4,7 @@ import "./Header.css"
 
 export default function Header() {
   return (
-   <nav class="navbar navbar-expand-lg bg-body-tertiary" style={{ backgroundColor: '#e9e8e6', fontFamily: 'Orbitron' }}>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary  shadow-xl shadow-cyan-500/50" style={{ backgroundColor: '#e9e8e6', fontFamily: 'Orbitron' }}>
   <div class="container-fluid">
     <a class="navbar-brand me-auto" href="#">OLAWOLE BOUSSARI</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

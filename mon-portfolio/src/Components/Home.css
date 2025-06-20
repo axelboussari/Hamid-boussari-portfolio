@@ -1,85 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
-/* .home{
-    padding-top: 300px;
-    padding-left: 90px;
-    color: white;
-    font-size: large;
-    font-family: Orbitron;
-    writing-mode: horizontal-tb;
-}
 
-.presentation {
-  display: flex;
-} */
+
+ 
+
+
+h1 {
+  color: cyan;
+}
 
 img {
-  background-size: cover;
+      border-radius: 40px;
+      /* box-shadow: 0 0 30px; */
+      transition:0.5s;
 }
-
-/* 
-.typing {
-    color: blue;
-}
-
-.Salutation {
-  position: absolute;
-  top: 35%;
-}
-
-.Name {
-  position: absolute;
-  top: 40%;
-}
-
-
-@keyframes typing {
-    from {
-      width: 0;
+img:hover {
+      transform: scale(1.05) rotateZ(2deg);
+      box-shadow: 0 0 40px cyan;
     }
-    to {
-      width: 22%;
-    }
-}
-
-
-@keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: white;
-    }
-  }
-
-.typing {
-    display:inline-flex;
-    overflow: hidden;
-    padding-left: 10px;
-    white-space: nowrap;
-    border-right: 0.15em solid white;
-    animation: typing 5s steps(35, end) infinite, blink-caret 0.75s step-end infinite;
-    width: 0;
-} */
-
-/* .slider-container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-} */
-
-.slider-image {
-  /* position: absolute;
-  right: -300px; Commence hors écran à droite */
-  /* animation: slideIn 2s forwards; */
-}
-
-.img:hover {
-  color: red;
-}
 
 .container {
-  position: absolute;
+  /* position: absolute; */
   top: 30%;
   left: 20%;
 }
