@@ -24,13 +24,13 @@ export default function Header() {
             <a class="nav-link mx-lg-2" href="#">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">EDUCATION</a>
+            <a class="nav-link mx-lg-2" href="#education">EDUCATION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">PROJECTS</a>
+            <a class="nav-link mx-lg-2" href="#projects">PROJECTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">CONTACTS</a>
+            <a class="nav-link mx-lg-2" href="#contacts">CONTACTS</a>
           </li>
         </ul>
         <div className="d-flex align-items-center gap-3">

@@ -12,3 +12,16 @@
 .mon-element {
   animation: fadeInUp 1s ease-out forwards;
 }
+
+.Universite:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  
+}
+  
+.icon {
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  margin-right: 10px;
+}

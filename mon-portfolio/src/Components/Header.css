@@ -7,8 +7,16 @@
   transition: 0.3s background-color;
 }
 
-.bi:hover {
-  background-color: black
+.bi-linkedin:hover {
+  background-color:#0077B5
+}
+
+.bi-github:hover {
+  background-color: #181717;
+}
+
+.bi-envelope-paper-fill:hover {
+  background-color: white;
 }
 
 .nav-link{
