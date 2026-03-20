@@ -1,0 +1,31 @@
+.navbar {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    box-shadow: #60a5fa 0px 1px 2px 0px, #60a5fa 0px 2px 4px -1px, #60a5fa 0px 4px 6px -2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar .navbar-brand {
+    color: var(--text-h);
+}
+
+.navbar .nav-link {
+    color: var(--text-h);
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent);
+}
+
+.navbar .nav-link.active {
+    color: var(--accent);
+}
+
+.navbar .nav-icon {
+    color: var(--text-h);
+}
+
+.navbar .nav-icon:hover {
+    color: var(--accent);
+}
