@@ -12,6 +12,7 @@
 
 .navbar .nav-link {
     color: var(--text-h);
+    margin-right: 2rem;
 }
 
 .navbar .nav-link:hover {
