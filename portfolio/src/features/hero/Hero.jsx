@@ -5,7 +5,7 @@ function Hero() {
     return (
         // <section id="hero">
             <div class="hero-content container text-center">
-                <div class="hero-text row align-items-center">
+                <div class="hero-text row align-items-center" id="hero">
                     <div class="col">
                         <p>Hello I'm</p>
                         <h1>{HeroData.name}</h1>
