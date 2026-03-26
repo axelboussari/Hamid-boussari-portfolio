@@ -9,12 +9,12 @@ function Hero() {
                     <div class="col">
                         <p>Hello I'm</p>
                         <h1>{HeroData.name}</h1>
-                        <span class="hero-role"><h2>{HeroData.role}</h2></span>
+                        <h2 class="hero-role">{HeroData.role}</h2>
                         <p>{HeroData.description}</p>
                         <button className="cta-button btn btn-outline-info">{HeroData.cta}</button>
                     </div>
                     <div class="col">
-                        {/* <img src={HeroData.image} alt={HeroData.name} /> */}
+                        <img src={HeroData.image} alt={HeroData.name} class="hero-image" />
                     </div>
                 </div>
             </div>
