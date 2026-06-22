@@ -1,10 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <meta name="description" content="Olawolé BOUSSARI — Software Engineer specializing in automation, networking and AI. View my projects and get in touch." />
+    <meta property="og:title" content="Olawolé BOUSSARI | Software Engineer" />
+    <meta property="og:description" content="Software Engineer specializing in automation, networking and AI." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Olawolé BOUSSARI | Software Engineer" />
+    <!-- Prevent flash of wrong theme -->
+    <script>
+      (function () {
+        const t = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <title>Olawolé BOUSSARI | Software Engineer</title>
   </head>
   <body>
     <div id="root"></div>

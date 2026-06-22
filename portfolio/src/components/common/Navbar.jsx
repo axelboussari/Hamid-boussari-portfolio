@@ -1,55 +1,90 @@
-import './Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { useTheme } from '../../hooks/useTheme';
+import { useActiveSection } from '../../hooks/useActiveSection';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { personalInfo, navItems } from '../../data/portfolioData';
+import './Navbar.css';
+
+const sectionIds = navItems.map(item => item.id);
 
 function Navbar() {
-    return (
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Olawole BOUSSARI</span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+  const { theme, toggleTheme } = useTheme();
+  const activeSection = useActiveSection(sectionIds);
+
+  return (
+    <nav className="navbar navbar-expand-lg fixed-top">
+      <div className="container-fluid px-4">
+        <a className="navbar-brand" href="#hero">
+          {personalInfo.name.split(' ')[0]}
+          <span className="brand-accent"> {personalInfo.name.split(' ').slice(1).join(' ')}</span>
+        </a>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mx-auto">
+            {navItems.map(({ id, label }) => (
+              <li key={id} className="nav-item">
+                <a
+                  className={`nav-link ${activeSection === id ? 'active' : ''}`}
+                  href={`#${id}`}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div className="navbar-icons d-flex align-items-center gap-3">
+            <a
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-icon"
+              aria-label="LinkedIn"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
+            </a>
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-icon"
+              aria-label="GitHub"
+            >
+              <FontAwesomeIcon icon={faGithub} size="lg" />
+            </a>
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="nav-icon"
+              aria-label="Email"
+            >
+              <FontAwesomeIcon icon={faEnvelope} size="lg" />
+            </a>
+
+            <button
+              className="theme-toggle"
+              onClick={toggleTheme}
+              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            >
+              <i className={`bi bi-${theme === 'dark' ? 'sun' : 'moon-stars'}`}></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#hero"    >Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav gap-3 ms-auto flex-row">
-                <li class="nav-item">
-                    <a href='https://www.linkedin.com/in/hamid-boussari-722873241' target="_blank" rel="noopener noreferrer" class="nav-icon">
-                        <FontAwesomeIcon icon={faLinkedin} size="lg" />
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href='https://github.com/axelboussari' target="_blank" rel="noopener noreferrer" class="nav-icon">
-                        <FontAwesomeIcon icon={faGithub} size="lg" />
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href='mailto:axel.boussari@gmail.com' target="_blank" rel="noopener noreferrer" class="nav-icon">
-                        <FontAwesomeIcon icon={faEnvelope} size="lg" />
-                    </a>
-                </li>
-            </ul>
-            </div>
+          </div>
         </div>
+      </div>
     </nav>
-    );
+  );
 }
 
 export default Navbar;
